@@ -130,10 +130,12 @@ dmypy.json
 
 # Mac OS org file
 .DS_Store
+.DS_Store
 
 # dev folder for working out ideas
 dev/
 ta/
+cmds/
 
 # pycharm
 .idea*
