@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
 import seaborn as sns
-
-
 
 
 
@@ -166,3 +166,5 @@ def get_ols_metrics(regressors, targets, annualization=1, ignorenan=True):
             reg.loc[col, 'Info Ratio'] = (model.intercept_ / residuals.std()) * np.sqrt(annualization)
 
     return reg
+
+
